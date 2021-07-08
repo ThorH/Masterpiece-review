@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    --background: #c2ad52;
+    --brown: #5e4801;
+    --brown-dark: #3a2d03;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --blue: #3485FF;
+    --grey-dark: #4D5E77;
+    --grey-light: #E5EAF1;
+
+    font-size: 62.5% /* 10px */
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background: var(--background);
+    
+    
+}
+
+body, button, input, textarea{
+   
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 27.2rem 1fr;
+
+    grid-template-areas: 
+    'header header'
+    'left right';
+}
+
+header{
+    grid-area: header;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.content header{
+    /* width: 90%;  */
+    margin: 3rem 0 0 .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.content header h1{
+    
+    font-size: 4.2rem;
+    position: absolute;
+    margin: 18rem 0 0 28rem
+
+}
+
+.content header img{
+    width: 30rem;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.content .menu{
+    width: 88%;
+    height: 40%;
+    margin-left: 2.5rem;
+    padding: 1.5rem;
+    background-color: var(--brown);
+    border-radius: .5rem;
+    grid-area: left;
+}
+
+.content .menu h2{
+    margin: 2.5rem 0;
+}
+
+.content .menu h2 a{
+    color: white;
+
+}
+
+.content header .login{
+    width: 16%;
+    margin-left: 100.5rem;
+    margin-bottom: 3rem;
+    border-radius: .8rem;
+    background: var(--brown);
+    padding: 4rem;
+}
+
+.content header .login input{
+    padding: .2rem;
+    border-radius: .3rem;
+    margin: .5rem 0;
+    outline: none;
+}
+
+.content header .login button{
+    padding: .2rem 1rem;
+    border-radius: .5rem;
+}
+
+.content main{
+    width: 50%;
+    /* margin-left: 30rem; */
+    padding: 30rem 66.5rem;
+    grid-area: right;
+    background-color: var(--brown);
+    border-radius: .8rem;
+}

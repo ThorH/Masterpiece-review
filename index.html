@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Masterpiece Review</title>
+        <link rel="icon" href="images/monalisa_anime.jpg" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/modal.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="/scripts/main.js" defer type="module"></script>
+
+
+    </head>
+    <body>
+        <div id="home" class="content">
+            <header>
+                <a href="index.html">
+                    <img src="images/monalisa_anime_transparent.png" alt="Monalisa Masterpiece Logo"/>
+                </a>
+                <h1>Masterpiece review</h1>
+                <div class="login">
+                    <form action="#">
+                        <label class="sr-only" for="login">Username</label>
+                        <input name="login" id="login" placeholder="Username">
+                        <label class="sr-only" for="senha">Senha</label>
+                        <input name="senha" id="senha" placeholder="Senha">
+                        <button>Login</button>
+                    </form>
+                    <p>
+                        Ainda não tem conta?
+                        <a href="#" class="signup">Cadastre-se</a>
+                    </p>
+                </div>
+            </header>
+            <div class="menu">
+                <h2><a href="#">Animes</a></h2>
+                <h2><a href="#">Series</a></h2>
+                <h2><a href="#">Filmes</a></h2>
+            </div>
+            
+            <main>
+        
+            </main>
+        </div>
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Cadastro</h2>
+                <form action="#">
+                    <label class="sr-only" for="email">E-mail</label>
+                    <input name="email" id="email" placeholder="E-mail">
+                    <label class="sr-only" for="login">Username</label>
+                    <input name="login" id="login" placeholder="Username">
+                    <label class="sr-only" for="senha">Senha</label>
+                    <input name="senha" id="senha" placeholder="Senha">
+                    <div class="buttons">
+                        <button class="grey">Confirmar</button>
+                        <div class="button red cancel">Cancelar</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
