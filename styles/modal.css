@@ -19,10 +19,10 @@
 
 .modal-wrapper .modal{
     width: min(59rem, 90%);
-    background: var(--background);
+    background: var(--brown-red);
     margin: auto;
 
-    border-radius: .8rem;
+    border-radius: .2rem;
 
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -31,17 +31,17 @@
 }
 
 .modal-wrapper .modal h2{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
-    color: var(--brown-dark);
+    color: var(--white);
 }
 
 .modal-wrapper .modal input{
     margin-bottom: 4rem;
     padding: 1.3rem 1.6rem;
-    border: .2rem solid var(--brown-dark);
-    border-radius: .8rem;
+    border: .2rem solid var(--white);
+    border-radius: .2rem;
     outline: none;
     width: min(70%, 30.2rem);
 
@@ -59,22 +59,37 @@
 
 .modal-wrapper .modal .buttons > button,
 .modal-wrapper .modal .buttons > .button{
-    padding: 1.3rem 3.2rem;
-    border-radius: .3rem;
+    border-radius: .2rem;
 
     cursor: pointer;
 }
 
 button.red,
 .button.red{
+    padding: 1.6rem 3.5rem;
     background: var(--red);
     color: var(--white);
 
 }
 
-button.grey,
-.button.grey{
-    background: var(--white);
-    color: var(--grey-dark);
+
+
+button.white,
+.button.white{
+    padding: 1.3rem 3.2rem;
+    background: var(--brown-red);
+    color: var(--white);
+    border: .3rem solid var(--white);
 }
 
+button.white:hover{
+    background:var(--white);
+    color:var(--brown-red);
+    transition: 0.5s;
+}    
+
+.button.red:hover{
+    background:var(--white);
+    color:var(--red);
+    transition: 0.5s;
+}

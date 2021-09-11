@@ -7,9 +7,10 @@
 }
 
 html{
-    --background: #c2ad52;
-    --brown: #5e4801; 
-    --brown-dark: #3a2d03;
+    --yellow: #c2ad52;
+    --brown: #5e4801;
+    --brown-red: #31180b; 
+    --brown-dark: #352907;
     --white: #FAFAFA;
     --red: #E83F5B;
     --blue: #3485FF;
@@ -22,7 +23,7 @@ html{
 body{
     display: flex;
     height: 100vh;
-    background: var(--background);
+    background: var(--yellow);
     
     
 }
@@ -59,14 +60,15 @@ body, button, input, textarea{
 }
 
 .content header h1{
-    margin: 25rem 0 0 0;
-    font-size: 4.2rem;
+    margin: 27rem 0 0 -3rem;
+    font-size: 4.8rem;
+    color: var(--brown-dark);
     
 
 }
 
 .content header a img{
-    margin: 2rem 0 -0.7rem 10rem;
+    margin: 2rem 0 -1.1rem 10rem;
     width: 38rem;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -75,11 +77,11 @@ body, button, input, textarea{
 }
 
 .content header .login{
-    width: 17%;
-    
-    border-radius: .8rem;
-    background: var(--brown);
-    padding: 4rem 3.5rem 4rem 3.5rem;
+    margin-left: 15rem;
+    width: 20%;
+    border-radius: .2rem;
+    background: var(--brown-red);
+    padding: 4.5rem 3.5rem;
 }
 
 .content header .login p{
@@ -90,44 +92,62 @@ body, button, input, textarea{
     color: var(--grey-light);
 }
 
+.content header .login p a:hover{
+    color: var(--red);
+    transition: 0.3s;
+}
+
 .content header .login input{
-    padding: .8rem;
-    border-radius: .3rem;
-    margin: .7rem 0;
+    padding: .8rem 8rem .8rem .4rem;
+    border-radius: .2rem;
+    margin-bottom: 1rem;
     outline: none;
 }
 
 .content header .login button{
-    padding: .8rem 1.5rem;
-    border-radius: .5rem;
+    padding: .8rem 12rem;
+    border-radius: .2rem;
+    color: var(--white);
+    background-color: var(--brown-red);
+    border: .2rem solid var(--white);
+}
 
+.content header .login button:hover{
+    background: var(--white);
+    color: var(--brown-red);
+    transition: 0.5s;
 }
 
 
-.content .menu{
+.content ul{
     margin: 1.6rem 0 0 3rem;
-    padding: 1.5rem;
-    background-color: var(--brown);
-    border-radius: .5rem;
-   
+    list-style-type: none;
+    display: flex;
+    padding: 5rem;
+    margin: -16rem 0 0 -35rem; 
 }
 
-.content .menu h2{
-    margin: 2.5rem 0;
-    font-size: 3rem;
+
+.content li{
+    margin-right: 8rem;
+    font-size: 3.8rem;
 }
 
-.content .menu h2 a{
+.content li a:hover {
+    color:var(--brown-dark);
+    transition: 0.5s;
+}
+
+.content ul li a{
     color: var(--white);
 
 }
-
 
 .content main{
     /* margin-left: 30rem; */
     padding: 5rem 8rem;
 
-    background-color: var(--brown-dark);
+    background-color: var(--brown-red);
 }
 
 .content main .highlights{ 
