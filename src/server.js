@@ -12,7 +12,7 @@ server.set('views', path.join(__dirname, 'views'))
 // Habilita os arquivos da pasta public
 server.use(express.static("public"))
 
-// 
+// usa as rotas
 server.use(routes)
 
 server.listen(3000, () => console.log("rodando"))
