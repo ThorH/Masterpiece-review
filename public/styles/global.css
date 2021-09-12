@@ -56,6 +56,7 @@ body, button, input, textarea{
     background: var(--yellow);
     display: flex;
     align-items: center;
+    
 }
 
 .content header h1{
@@ -145,7 +146,6 @@ body, button, input, textarea{
 .content main{
     /* margin-left: 30rem; */
     padding: 5rem 8rem;
-
 }
 
 .content main .highlights{ 
@@ -154,6 +154,7 @@ body, button, input, textarea{
     justify-content: center;
     
 }
+
 
 .content main .highlights .review{
     margin: 3rem;
@@ -185,5 +186,34 @@ body, button, input, textarea{
 
 }
 
+@media(max-width: 136.6rem){
+ 
+    .content header a img{
+        margin: 2rem 0 -8.4rem 10rem;
+    }
 
+    .content header .login {
+        width:25%;
+        margin-left: 5rem;
+    }
+
+    .content header{
+        margin-left: -13rem;
+        width: 140%;
+    }
+
+    .content header .login input{
+        padding: .8rem 0 .8rem .4rem;
+        border-radius: .2rem;
+        margin-bottom: 1rem;
+        outline: none;
+    }
+
+    .content header .login button{
+        padding: .8rem 12rem;
+
+    }    
+    
+
+}
 
